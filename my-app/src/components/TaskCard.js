@@ -46,7 +46,7 @@ const TaskInformation = styled.div`
 
   .secondary-details {
     display: flex;
-    margin-top: 10px;
+    margin-top: 10px;gi
     justify-content: space-between;
     align-items: center;
     width: 100%;
