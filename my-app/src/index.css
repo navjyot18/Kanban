@@ -1,0 +1,405 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 0 !important;
+  width: 100vw;
+  height: 100vh;
+}
+.left-bar {
+  height: 952px;
+  border-right: 1px solid #dbdbdb;
+  position: relative;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.topbar {
+  border-bottom: 1px solid #dbdbdb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 22px 50.5px 22px 48.5px;
+  justify-content: space-between;
+}
+.input_container {
+  width: 417px;
+  height: 44px;
+  position: relative;
+  @media screen and (min-width: 400px) and (max-width: 1300px) {
+    width: 250px;
+  }
+}
+.topbar_input {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  border-radius: 6px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #787486;
+  padding: 0px 0px 0px 54.8px;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+.search_icon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  z-index: 1;
+  top: 9.83px;
+  left: 18.63px;
+}
+.profile-notification-container {
+  display: flex;
+  flex-direction: row;
+}
+.notification-container {
+  display: flex;
+  gap: 29px;
+  @media screen and (max-width: 768px) {
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.profile-container {
+  margin-left: 50px;
+  display: flex;
+  @media screen and (max-width: 768px) {
+    margin-left: 25px;
+  }
+}
+.profile-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 3;
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+}
+.profile-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #0d062d;
+}
+.profile-address {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #787486;
+}
+.profile-pic {
+  width: 38px;
+  height: 38px;
+  margin-left: 18px;
+}
+.profile-more-details {
+  width: 13px;
+  height: 6.45px;
+  margin-left: 7.5px;
+}
+.top-profile {
+  width: 251px;
+  padding: 32px 25.5px 32px 22px;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.top-profile-desc {
+  display: flex;
+  gap: 9px;
+}
+.top-profile-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0d062d;
+}
+.top-profile-pic {
+  width: 24px;
+  height: 24px;
+}
+.top-profile-toggle {
+  width: 20px;
+  height: 20px;
+}
+.tab-container {
+  padding: 0px 13px;
+}
+.tab-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 31px 0px 30px 10px;
+}
+.tab {
+  display: flex;
+  gap: 16px;
+}
+.tab-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486;
+}
+.tab-icon {
+  width: 20px;
+  height: 20px;
+}
+.projects-section {
+  padding: 30px 12px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.project-section-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 14px;
+}
+.project-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 21px;
+}
+.project-section-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #787486;
+}
+.individual-project {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.add-project-icon {
+  width: 13px;
+  height: 13px;
+}
+.project-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.current-tab-selector {
+  height: 5px;
+}
+.thoughts-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.thoughts-container {
+  padding: 37px 20px 20px 20px;
+  background: #f5f5f5;
+  border-radius: 16px;
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+}
+.thoughts-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #000000;
+}
+.thoughts-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 12px;
+  color: #787486;
+}
+.thoughts-footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 12px 27px;
+  color: #000000;
+  margin-top: 14px;
+}
+.bulb-container {
+  width: 66px;
+  height: 66px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  position: absolute;
+  top: -33px;
+}
+.kanban-container {
+  padding: 41px 48px 0px 48px;
+}
+.kanban-container-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media screen and (max-width: 768px) {
+    align-items: flex-start;
+  }
+}
+.filter-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.filter-section-container-left {
+  display: flex;
+  gap: 12px;
+}
+.filter-section-container-right {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.invite-section-container {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.invite-section-container-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+}
+.invite-section-container-right {
+  display: flex;
+}
+
+.invitee {
+  margin-left: 12px;
+}
+.invite-section-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 56px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #0d062d;
+  @media screen and (max-width: 1100px) {
+    font-size: 28;
+  }
+}
+.invite-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+
+  color: #5030e5;
+}
+.custom-dropdown {
+  height: 40px;
+  padding: 0px 22px 0px 17px;
+  border: 1px solid #787486;
+  border-radius: 6px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.icon_and_title {
+  display: flex;
+  gap: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  align-items: center;
+  color: #787486;
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.bottom {
+  height: 100%;
+}
